@@ -1,7 +1,7 @@
 <?php namespace App\Http\Controllers;
 
 // Modelos
-//use App\Categoria;
+use App\Categoria;
 
 use App\Http\Requests;
 use Illuminate\Http\Request;
@@ -12,6 +12,6 @@ class InicioController extends Controller {
     {
         //$categorias = Categoria::all();
         //return view('index', compact('categorias'));
-        return 'inicio laravel desde InicioController';
+        return 'inicio laravel desde InicioController. Con activacion de modelo categoria';
     }
 }

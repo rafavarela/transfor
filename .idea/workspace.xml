@@ -29,7 +29,7 @@
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/InicioController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.45617172" vertical-offset="0" max-vertical-offset="559">
-              <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+              <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
               <folding>
                 <element signature="e#55#78#0#PHP" expanded="true" />
               </folding>
@@ -751,7 +751,7 @@
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/InicioController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.45617172" vertical-offset="0" max-vertical-offset="559">
-          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
           <folding>
             <element signature="e#55#78#0#PHP" expanded="true" />
           </folding>

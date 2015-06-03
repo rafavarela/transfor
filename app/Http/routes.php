@@ -6,7 +6,7 @@
 //Route::get('/','InicioController@getIndex');
 
 Route::get('/',function(){
-    return 'inicio laravel';
+    return 'inicio laravel 2';
 });
 
 

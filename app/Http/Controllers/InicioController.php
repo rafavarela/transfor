@@ -14,6 +14,6 @@ class InicioController extends Controller {
         //return view('index', compact('categorias'));
         //return view('index');
         //var_dump($categorias);
-        return 'inicio laravel desde InicioController. el modelo categorias intenta obtener datos';
+        return 'inicio laravel desde InicioController. el modelo categorias intenta obtener datos *';
     }
 }

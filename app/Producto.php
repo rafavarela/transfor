@@ -1,4 +1,4 @@
-<?php namespace App;
+<?php namespace transfor;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -10,12 +10,12 @@ class Producto extends Model {
 
     public function categorias()
     {
-        return $this->belongsTo('App\Categoria');
+        return $this->belongsTo('transfor\Categoria');
     }
 
     public function fotos()
     {
-        return $this->hasMany('App\Foto');
+        return $this->hasMany('transfor\Foto');
     }
 
 }

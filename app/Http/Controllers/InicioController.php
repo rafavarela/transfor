@@ -1,9 +1,9 @@
-<?php namespace App\Http\Controllers;
+<?php namespace transfor\Http\Controllers;
 
 // Modelos
-use App\Categoria;
+use transfor\Categoria;
 
-use App\Http\Requests;
+use transfor\Http\Requests;
 use Illuminate\Http\Request;
 
 class InicioController extends Controller {

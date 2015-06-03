@@ -1,4 +1,4 @@
-<?php namespace App\library;
+<?php namespace transfor\library;
 
     setlocale(LC_ALL, 'en_US.UTF8');
 

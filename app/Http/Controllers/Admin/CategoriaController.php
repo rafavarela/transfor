@@ -1,13 +1,13 @@
-<?php namespace App\Http\Controllers\Admin;
+<?php namespace transfor\Http\Controllers\Admin;
 
-use App\Http\Requests\CreateCategoriaRequest;
-use App\Http\Requests\EditCategoriaRequest;
+use transfor\Http\Requests\CreateCategoriaRequest;
+use transfor\Http\Requests\EditCategoriaRequest;
 
 // Modelo
-use App\Categoria;
+use transfor\Categoria;
 
-use App\Http\Requests;
-use App\Http\Controllers\Controller;
+use transfor\Http\Requests;
+use transfor\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;

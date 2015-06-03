@@ -1,16 +1,16 @@
-<?php namespace App\Http\Controllers\Admin;
+<?php namespace transfor\Http\Controllers\Admin;
 
 // Modelo
 
-use App\library\myFunctions;
-use App\Producto;
-use App\Foto;
+use transfor\library\myFunctions;
+use transfor\Producto;
+use transfor\Foto;
 
-use App\Http\Requests;
+use transfor\Http\Requests;
 use Illuminate\Http\Request;
-use App\Http\Requests\CreateFotoRequest;
+use transfor\Http\Requests\CreateFotoRequest;
 
-use App\Http\Controllers\Controller;
+use transfor\Http\Controllers\Controller;
 
 
 class FotoController extends Controller {

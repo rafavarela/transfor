@@ -1,14 +1,14 @@
-<?php namespace App\Http\Controllers\Admin;
+<?php namespace transfor\Http\Controllers\Admin;
 
-use App\Http\Requests\CreateProductoRequest;
-use App\Http\Requests\EditProductoRequest;
+use transfor\Http\Requests\CreateProductoRequest;
+use transfor\Http\Requests\EditProductoRequest;
 
 // Modelo
-use App\Producto;
-use App\Categoria;
+use transfor\Producto;
+use transfor\Categoria;
 
-use App\Http\Requests;
-use App\Http\Controllers\Controller;
+use transfor\Http\Requests;
+use transfor\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;

@@ -1,11 +1,11 @@
-<?php namespace App\Http\Controllers;
+<?php namespace transfor\Http\Controllers;
 
 // Modelos
-use App\Categoria;
-use App\Producto;
+use transfor\Categoria;
+use transfor\Producto;
 
-use App\Http\Requests;
-use App\Http\Controllers\Controller;
+use transfor\Http\Requests;
+use transfor\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 

@@ -1,6 +1,6 @@
-<?php namespace App\Http\Requests;
+<?php namespace transfor\Http\Requests;
 
-use App\Http\Requests\Request;
+use transfor\Http\Requests\Request;
 
 class CreateProductoRequest extends Request {
 

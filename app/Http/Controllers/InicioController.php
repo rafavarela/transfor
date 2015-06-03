@@ -10,8 +10,8 @@ class InicioController extends Controller {
 
     public function getIndex()
     {
-        //$categorias = Categoria::all();
+        $categorias = Categoria::all();
         //return view('index', compact('categorias'));
-        return 'inicio laravel desde InicioController. Con activacion de modelo categoria';
+        return 'inicio laravel desde InicioController. el modelo categorias intenta obtener datos';
     }
 }

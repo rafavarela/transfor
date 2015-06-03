@@ -1,0 +1,87 @@
+@extends('app')
+
+@section('estilos')
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/redmond/jquery-ui.css">
+@endsection
+
+@section('content')
+<div class="container">
+	<div class="row">
+		<div class="col-md-10 col-md-offset-1">
+			<div class="panel panel-default">
+				<div class="panel-heading">Categorias</div>
+
+				<div class="panel-body">
+				    <p>
+				        <a class="btn btn-info" href="{{ route('admin.categoria.create') }}" role="button">Nueva categoría</a>
+				        <a class="btn btn-info" href="{{ route('admin.producto.index') }}" role="button">Ir al listado de Productos</a>
+				    </p>
+				    <p>{{ $categorias->total() }} Categorías. Página {{ $categorias->currentPage() }} de {{ $categorias->lastPage() }}</p>
+					@include('admin.categorias.partials.table')
+                    {!! $categorias->render() !!}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="dialog-confirm" title="Confirmar borrado"></div>
+
+@endsection
+
+
+@section('scripts')
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+    <script>
+            function fnOpenNormalDialog(codigo, fila) {
+
+                $("#dialog-confirm").html("Realmente desea eliminar este registro?");
+
+                // Define the Dialog and its properties.
+                $( "#dialog-confirm" ).dialog({
+                    resizable: false,
+                    height:170,
+                    modal: true,
+                    buttons: {
+                        "Si": function() {
+                            $( this ).dialog( "close" );
+                            EliminarRegistro(codigo, fila);
+                        },
+                        "No": function() {
+                            $( this ).dialog( "close" );
+                        }
+                    }
+                });
+            }
+
+            $('.btn-delete').click(function(){
+                var codigo = $(this).data('codigo');
+                var fila   = $(this).parents('tr');
+                fnOpenNormalDialog(codigo, fila);
+            });
+
+            function EliminarRegistro(codigo, fila) {
+                var url =  window.location.protocol + "//"+ window.location.host + window.location.pathname +
+                            codigo;
+
+                var token = <?php echo "'" . csrf_token() . "'"; ?>;
+                var data  = "_method=DELETE&_token=" + token;
+                var row   = fila;
+
+                $.post(url, data, function(result) {
+                    //alert(result);
+
+                    if(result == ""){
+                        alert("No se pudo eliminar el registro");
+                    }else{
+                        alert(result);
+                        row.fadeOut();
+                    }
+
+                });
+
+            }
+
+    </script>
+@endsection

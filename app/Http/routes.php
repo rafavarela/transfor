@@ -3,7 +3,10 @@
 /*
  * Paginas estaticas
  */
-Route::get('/','InicioController@getIndex');
+//Route::get('/','InicioController@getIndex');
+Route::get('/',function(){
+    return 'inicio laravel';
+});
 
 
 Route::controllers([

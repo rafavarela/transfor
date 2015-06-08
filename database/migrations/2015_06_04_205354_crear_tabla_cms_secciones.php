@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCategoriasTable extends Migration {
+class CrearTablaCmsSecciones extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,9 +12,10 @@ class CreateCategoriasTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('categorias', function(Blueprint $table)
+		Schema::create('cms_secciones', function(Blueprint $table)
 		{
 			$table->increments('id');
+            $table->string('nombre',245);
 			$table->timestamps();
 		});
 	}
@@ -26,7 +27,7 @@ class CreateCategoriasTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('categorias');
+		Schema::drop('cms_secciones');
 	}
 
 }

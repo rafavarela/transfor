@@ -4,11 +4,8 @@
  * Paginas estaticas
  */
 Route::get('/','InicioController@getIndex');
-/*
-Route::get('/',function(){
-    return 'inicio laravel 2';
-});
-*/
+Route::get('nosotros','InicioController@getNosotros');
+Route::get('contactenos','InicioController@getContactenos');
 
 Route::controllers([
     'auth' => 'Auth\AuthController',
@@ -28,7 +25,15 @@ Route::resource('producto', 'ProductoController');
  */
 
 Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function(){
+
+    Route::get('/','InicioController@getIndex');
+
+    // -- PRODUCTOS (Vitrina del negocio) ------------------------//
     Route::resource('categoria', 'CategoriaController');
     Route::resource('producto', 'ProductoController');
     Route::controller('foto', 'FotoController');
+
+    // -- NOTICIAS (Textos del CMS) ------------------------------//
+    Route::resource('cmsseccion', 'CmsSeccionController');
+    Route::resource('cmsnoticia', 'CmsNoticiaController');
 });

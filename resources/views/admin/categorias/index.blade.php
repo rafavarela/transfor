@@ -62,8 +62,14 @@
             });
 
             function EliminarRegistro(codigo, fila) {
-                var url =  window.location.protocol + "//"+ window.location.host + window.location.pathname +
-                            codigo;
+               var url =  window.location.protocol + "//" + window.location.host + window.location.pathname;
+                               var ultimocaracter = url.substr(url.length - 1);
+                               if(ultimocaracter == "/"){
+                                   url = url + codigo;
+                               }else{
+                                   url = url + "/" +codigo;
+                               }
+                //alert(window.location.pathname);
 
                 var token = <?php echo "'" . csrf_token() . "'"; ?>;
                 var data  = "_method=DELETE&_token=" + token;

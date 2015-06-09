@@ -117,7 +117,7 @@
             <div class="container">
               <div class="title">
                 <h1 style="color:#FFFF00">Representaciones TRANSFOR S.A.S.</h1>
-                <h2>Líderes en la industria del acero</h2>
+                <h2 style="font-size:1.5em">Acero certificado antisismico. Cumple con sello de reglamento técnico STM A 706 GR 60 NTC 2289. </h2>
               </div>
             </div>
         </div>

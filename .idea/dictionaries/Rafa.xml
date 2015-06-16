@@ -2,6 +2,7 @@
   <dictionary name="Rafa">
     <words>
       <w>asunto</w>
+      <w>cabeceras</w>
       <w>categoria</w>
       <w>categorias</w>
       <w>cmsnoticias</w>
@@ -26,7 +27,9 @@
       <w>secciones</w>
       <w>solicitud</w>
       <w>transfor</w>
+      <w>txtemail</w>
       <w>usuario</w>
+      <w>varela</w>
       <w>éxito</w>
     </words>
   </dictionary>

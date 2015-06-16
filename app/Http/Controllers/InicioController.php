@@ -40,8 +40,6 @@ class InicioController extends Controller {
         //guarda el valor de los campos enviados desde el form en un array
         $data = $request->all();
 
-        // dd($request->Comentarios);
-
         //se envia el array y la vista lo recibe en llaves individuales {{ $email }} , {{ $subject }}...
 
         \Mail::send('email', $data, function($message) use ($request)

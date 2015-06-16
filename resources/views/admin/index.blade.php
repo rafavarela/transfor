@@ -8,6 +8,7 @@
     <div class="container">
     	<div class="row">
     		<div class="col-md-10 col-md-offset-1">
+
     			<div class="panel panel-default">
     				<div class="panel-heading">Edición de los textos del sitio web</div>
 
@@ -25,6 +26,15 @@
                         <a href="/admin/producto/" class="btn btn-primary" role="button">Listado de productos / servicios</a>
                     </div>
                 </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">Edición de usuarios</div>
+
+                    <div class="panel-body">
+                        <a href="/admin/usuario/" class="btn btn-primary" role="button">Listado de usuarios</a>
+                    </div>
+                </div>
+
     		</div>
     	</div>
     </div>

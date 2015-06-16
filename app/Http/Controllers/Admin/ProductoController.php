@@ -15,6 +15,12 @@ use Illuminate\Support\Facades\Validator;
 
 class ProductoController extends Controller {
 
+    // Este es el middleware de autenticacion //
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function index()
     {
         $productos = Producto::Paginate(10);

@@ -11,6 +11,15 @@
 @section('contenido')
 
     <p>
+         @if(Session::has('message'))
+            <div class="alert alert-info">
+                {{Session::get('message')}}
+            </div>
+            <script>alert('Su mensaje fue enviado con éxito');</script>
+        @endif
+    </p>
+
+    <p>
         <h1>Regional Norte</h1>
     </p>
     <p>
@@ -65,8 +74,30 @@
     </p>
 
     <p>
-        <br>/
+        <br>
     </p>
+
+    <div class="reply-section">
+        <div class="reply-section-head">
+            <div class="reply-section-head-text">
+
+                <ul>
+                @foreach($errors->all() as $error)
+                    <li>{{ $error  }}</li>
+                @endforeach
+                </ul>
+
+                @if(Session::has('message'))
+                    <div class="alert alert-info">
+                      {{Session::get('message')}}
+                    </div>
+                @endif
+            </div>
+        </div>
+    </div>
+
+    <p><br/></p>
+
     <div class="reply-section">
         <div class="reply-section-head">
             <div class="reply-section-head-text">
@@ -74,7 +105,10 @@
             </div>
             <div class="clear-fix"></div>
         </div>
+
         @include('partials.formulario')
     </div>
 
 @stop
+
+

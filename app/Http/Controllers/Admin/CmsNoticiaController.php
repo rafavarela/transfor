@@ -15,6 +15,12 @@ use Illuminate\Support\Facades\Validator;
 
 class CmsNoticiaController extends Controller {
 
+    // Este es el middleware de autenticacion //
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function index()
     {
         $cmsnoticias = Cmsnoticia::Paginate(10);

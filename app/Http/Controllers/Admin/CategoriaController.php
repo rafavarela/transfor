@@ -14,6 +14,12 @@ use Illuminate\Support\Facades\Validator;
 
 class CategoriaController extends Controller {
 
+    // Este es el middleware de autenticacion //
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
 	public function index()
 	{
 		$categorias = Categoria::Paginate(5);

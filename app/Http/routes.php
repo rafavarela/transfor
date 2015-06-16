@@ -5,7 +5,17 @@
  */
 Route::get('/','InicioController@getIndex');
 Route::get('nosotros','InicioController@getNosotros');
-Route::get('contactenos','InicioController@getContactenos');
+
+// Route::get('contactenos','InicioController@getContactenos');
+Route::get('contactenos', ['as' => 'contactenos', 'uses' => 'InicioController@create']);
+
+// Route::post('exito','InicioController@postExito');
+Route::post('contactenos', ['as' => 'contactenos_store', 'uses' => 'InicioController@store']);
+
+
+
+
+
 
 Route::controllers([
     'auth' => 'Auth\AuthController',
@@ -36,4 +46,8 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function(){
     // -- NOTICIAS (Textos del CMS) ------------------------------//
     Route::resource('cmsseccion', 'CmsSeccionController');
     Route::resource('cmsnoticia', 'CmsNoticiaController');
+
+    // -- USUARIOS  ----------------------------------------------//
+    Route::resource('usuario', 'UsuarioController');
+
 });

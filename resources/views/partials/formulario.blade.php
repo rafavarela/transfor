@@ -1,10 +1,18 @@
 
     <div class="blog-form">
-        <form>
-            <input type="text" class="text" value="Nombre" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Enter Name';}">
-            <input type="text" class="text" value="Email" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Enter Email';}">
-            <input type="text" class="text" value="Asunto" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Subject';}">
-            <textarea></textarea>
-            <input type="button" value="ENVIAR COMENTARIOS">
-        </form>
+
+        {!! Form::open(array('route' => 'contactenos_store', 'class' => 'form')) !!}
+
+            {!! Form::text('Nombre', null, ['required', 'class'=>'text', 'placeholder'=>'Nombre *'] ) !!}
+
+            {!! Form::email('Email', null, ['required', 'class' => 'text', 'placeholder'=>'Email *'] ) !!}
+
+            {!! Form::text('Asunto', null, array('required', 'class'=>'text', 'placeholder'=>'Asunto *')) !!}
+
+            {!! Form::textarea('Comentarios', null, ['required', 'placeholder'=>'Comentarios *']) !!}
+
+
+            <input name="btnenviar" type="submit" value="ENVIAR COMENTARIOS">
+
+        {!! Form::close() !!}
     </div>

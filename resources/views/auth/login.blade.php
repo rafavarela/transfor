@@ -5,7 +5,7 @@
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">
 			<div class="panel panel-default">
-				<div class="panel-heading">Login</div>
+				<div class="panel-heading">Inicio de sesión</div>
 				<div class="panel-body">
 					@if (count($errors) > 0)
 						<div class="alert alert-danger">
@@ -40,7 +40,7 @@
 								<div class="checkbox">
 									<label>
 									    {!! Form::checkbox('remember', '')  !!}
-									    Remember Me
+									    Mantener la sesión iniciada
 									</label>
 								</div>
 							</div>
@@ -48,8 +48,7 @@
 
 						<div class="form-group">
 							<div class="col-md-6 col-md-offset-4">
-							    {!! Form::submit('Login', ['class' => 'btn btn-primary']) !!}
-								<a class="btn btn-link" href="{{ url('/password/email') }}">Forgot Your Password?</a>
+							    {!! Form::submit('Iniciar sesión', ['class' => 'btn btn-primary']) !!}
 							</div>
 						</div>
 					</form>

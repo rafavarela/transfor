@@ -15,6 +15,12 @@ use transfor\Http\Controllers\Controller;
 
 class FotoController extends Controller {
 
+    // Este es el middleware de autenticacion //
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function getMostrarFotos($id)
     {
         //$fotos = Producto::find($id)->fotos();

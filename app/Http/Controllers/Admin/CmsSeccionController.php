@@ -15,9 +15,14 @@ use Illuminate\Http\Request;
 
 class CmsSeccionController extends Controller {
 
+    // Este es el middleware de autenticacion //
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
 	public function index()
 	{
-
 		$cmssecciones = Cmsseccion::Paginate(5);
         //var_dump($cmssecciones);
         return view('admin.cmssecciones.index', compact('cmssecciones'));

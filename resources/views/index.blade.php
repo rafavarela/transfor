@@ -14,6 +14,8 @@
         <!--webfont-->
         <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,200,300,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
 
         {!! Html::script('js/jquery1.min.js') !!}
 
@@ -107,6 +109,19 @@
                     	<img src="images/slide-3.jpg" class="img-responsive" alt=""/>
                 	</div>
                 	<!--/slide -->
+
+                	<!-- /Duplicate to create more slides -->
+                    <div class="slide"  id="Home">
+                        <img src="images/slide-4.jpg" class="img-responsive" alt=""/>
+                    </div>
+                    <!--/slide -->
+
+                    <!-- /Duplicate to create more slides -->
+                    <div class="slide"  id="Home">
+                        <img src="images/slide-5.jpg" class="img-responsive" alt=""/>
+                    </div>
+                    <!--/slide -->
+
             </div>
             <div class="timers"></div>
             <div class="slidePrev"><span></span></div>
@@ -117,7 +132,7 @@
             <div class="container">
               <div class="title">
                 <h1 style="color:#FFFF00">Representaciones TRANSFOR S.A.S.</h1>
-                <h2 style="font-size:1.5em">Acero certificado antisismico. Cumple con sello de reglamento técnico STM A 706 GR 60 NTC 2289. </h2>
+                <h2 style="font-size:1.5em">Acero certificado antisismico. Cumple con sello de reglamento técnico ASTM A 706 GR 60 NTC 2289. </h2>
               </div>
             </div>
         </div>

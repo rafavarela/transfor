@@ -44,7 +44,7 @@
         <br>
         Av. Troncal Panamericana de Occidente No. 5-61 Parque Industrial Puerto Vallarta Bodega No. 20 <br>
         Tels: 893 2660 - 893 2661 <br>
-        direccioncomercial@transforsas.com <br>
+        direccioncomercialbogota@transforsas.com <br>
         Mosquera - Cundinamarca
         <br>
     </p>
@@ -62,14 +62,14 @@
         <br>
         Celular: 313 571 0383 <br>
         direccioncomercial@transforsas.com <br>
-        Robinsón Estevez
+        Robinsón Estevez López
         <br>
     </p>
     <p>
         <br>
         Celular: 321 897 3251 <br>
         direccioncomercialbogota@transforsas.com <br>
-        Mauren Alean
+        Mauren Alean Corrales
         <br>
     </p>
 

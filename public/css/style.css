@@ -63,8 +63,9 @@ ul{
 	padding:1em;
 	display:block;
 	color:#FFFFFF;
-	font-size:16px;
+	font-size:1.6em;
 	font-weight:400;
+    font-family: 'Pathway Gothic One', sans-serif;;
 }
 .top-menu ul li.active a{
 	color:#22283E;
@@ -2008,13 +2009,20 @@ ul.buttons li{
 	border-left: 10px solid #FF0000;
 }
 .blog-post h1{
-	text-transform:uppercase;
-	font-weight: 300;
-	color: #FFFF00;
-	font-size: 3em;
-	font-family: Lato, sans-serif, 'Yanone Kaffeesatz';
-	margin: 0 0 0.65em 0.8em;
+     text-transform:uppercase;
+     font-weight: 300;
+     color: #000000;
+     font-size: 3em;
+     font-family: Lato, sans-serif, 'Yanone Kaffeesatz';
+     margin: 0 0 0.65em 0.8em;
+ }
+.blog-post h1 span{
+    background-color: #FFFF00;
+    font-family: 'Pathway Gothic One';
+    padding-left: 1em;
+    padding-right: 3em;
 }
+
 .blog-post p {
 	color: #f0f0f0;
 	font-weight: 300;

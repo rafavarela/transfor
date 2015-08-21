@@ -17,6 +17,7 @@
         <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,200,300,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
 
 		{!! Html::script('js/jquery1.min.js') !!}
         {!! Html::script('js/move-top.js') !!}
@@ -29,7 +30,7 @@
 				});
 			});
 		</script>
-
+        @yield('estilos')
     </head>
     <body>
 
@@ -40,7 +41,7 @@
             <div class="blog-header-bottom">
                 <div class="container">
                     <div class="blog-post">
-                        <h1>@yield('tituloprincipal','CATEGORIAS DE PRODUCTOS')</h1>
+                        <h1><span>@yield('tituloprincipal','CATEGORIAS DE PRODUCTOS')</span></h1>
                         <p>@yield('encabezado')</p>
                     </div>
                 </div>
@@ -48,8 +49,8 @@
         </div>
         <!-- header-section-ends -->
         <!-- content-section-starts -->
-        <div class="blog-content">
-			  <div class="container">
+        <div class="blog-content" style="padding-top: 0px">
+			  <div class="container" >
               		<!-- Aqui va el contenido ::INICIO::-->
                     @yield('contenido')
                     <!-- Aqui va el contenido ::FIN::-->

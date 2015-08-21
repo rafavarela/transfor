@@ -5,7 +5,7 @@
 @stop
 
 @section('contenido')
-
+    <br><br>
     <?php
         $columnas = 1;
         $PintarEncabezado = 1;
